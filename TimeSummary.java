@@ -8,7 +8,12 @@ public class TimeSummary {
     private String ScanElapsedTime;
 
     public TimeSummary() {
-    }
+		ReportTime = "";
+		ScanStartTime = "";
+		ScanEndTime = "";
+		ScanElapsedTime = "";
+	}
+
 
     public String getReportTime() {
         return ReportTime;
@@ -44,12 +49,12 @@ public class TimeSummary {
 
     @Override
     public String toString() {
-        return "<TimeSummary>\n"
-                + "\t<ReportTime>" + ReportTime + "</ReportTime>\n"
-                + "\t<ScanStartTime>" + ScanStartTime + "</ScanStartTime>\n"
-                + "\t<ScanEndTime>" + ScanEndTime + "</ScanEndTime>\n"
-                + "\t<ScanElapsedTime>" + ScanElapsedTime + "</ScanElapsedTime>\n" 
-                + "</TimeSummary>";
+        return "\t<TimeSummary>\n"
+                + "\t\t\t<ReportTime>" + ReportTime + "</ReportTime>\n"
+                + "\t\t\t<ScanStartTime>" + ScanStartTime + "</ScanStartTime>\n"
+                + "\t\t\t<ScanEndTime>" + ScanEndTime + "</ScanEndTime>\n"
+                + "\t\t\t<ScanElapsedTime>" + ScanElapsedTime + "</ScanElapsedTime>\n" 
+                + "\t\t</TimeSummary>";
     }
 
 }

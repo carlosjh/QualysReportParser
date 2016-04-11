@@ -1,28 +1,26 @@
 package qualysreportparser;
 
-import java.net.InetAddress;
-
 public class HostInfo {
 
-    private InetAddress ip;
+    private String ip;
 
-    public HostInfo() {
-        ip = null;
+    public HostInfo(String ip) {
+        this.ip = ip;
     }
 
-    public InetAddress getIp() {
+    public String getIp() {
         return ip;
     }
 
-    public void setIp(InetAddress ip) {
+    public void setIp(String ip) {
         this.ip = ip;
     }
 
     @Override
     public String toString() {
-        return "<HostInfo>\n"
-                + "\t<HostIP>" + ip + "</HostIP>\n"
-                + "</HostInfo>";
+        return "\t\t<HostInfo>\n"
+                + "\t\t\t<HostIP>" + ip + "</HostIP>\n"
+                + "\t\t</HostInfo>\n";
     }
 
 }

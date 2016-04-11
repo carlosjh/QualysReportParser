@@ -27,6 +27,6 @@ public class ReportSummary {
 
     @Override
     public String toString() {
-        return "<ReportSummary>\n" + ts.toString() + svs.toString() + "\n</ReportSummary>";
+        return "<ReportSummary>\n\t" + ts.toString() +"\n\t"+ svs.toString() + "\n\t</ReportSummary>\n";
     }
 }
